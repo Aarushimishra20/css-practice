@@ -1,0 +1,24 @@
+/* des sel */
+main p {
+    color : red;
+}
+
+/* 
+child selector */
+h1> p{
+    color:blueviolet;
+}
+
+
+section + p{
+    color: yellow;
+}
+
+[target="_blank"] {
+color: pink;
+text-decoration: none;
+}
+
+[alt~="pw1"] {
+    background-color:aquamarine;
+}
