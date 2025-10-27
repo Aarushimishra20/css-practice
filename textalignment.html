@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Alignment Properties</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      padding: 20px;
+    }
+
+    .align {
+      border: 1px solid gray;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+
+    /* 1. text-align */
+    .center {
+      text-align: center;
+    }
+
+    /* 2. text-align-last */
+    .justify-last {
+      text-align: justify;
+      text-align-last: right;
+    }
+
+    /* 3. direction */
+    .rtl {
+      direction: rtl;
+    }
+
+    /* 4. unicode-bidi */
+    .bidi {
+      direction: rtl;
+      unicode-bidi: bidi-override;
+    }
+
+    /* 5. vertical-align (inline text) */
+    .v-align span {
+      vertical-align: middle;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Text Alignment Properties</h1>
+
+  <p class="align center"><b>1. text-align:</b> This text is CENTER aligned.</p>
+
+  <p class="align justify-last">
+    <b>2. text-align-last:</b> This paragraph has justified text alignment,
+    but the <u>last line</u> is aligned to the right side only.
+  </p>
+
+  <p class="align rtl"><b>3. direction:</b> This text flows from right to left (RTL).</p>
+
+  <p class="align bidi"><b>4. unicode-bidi:</b> This forces the text to strictly follow RTL direction.</p>
+
+  <p class="align v-align">
+    <b>5. vertical-align:</b> 
+    <span style="font-size:40px;">😊</span> <span>Text aligned middle with emoji</span>
+  </p>
+</body>
+</html>
