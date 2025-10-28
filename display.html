@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <style>
+/* p tag ka default behaviour block hota hai,
+   par yahan use inline kar diya gaya hai, 
+   jisse ye same line mein show honge */
+p {
+    display: inline;
+}
+
+/* .aaru class ko block banaya gaya hai
+   jisse span tag (jo normally inline hota hai)
+   ab poori line occupy karega, aur next element next line mein chala jayega */
+.aaru {
+    display: block;
+}
+
+/* .inline-block class ka use inline aur block dono ke mix behaviour ke liye hota hai
+   - inline ki tarah same line mein dikhata hai
+   - block ki tarah width, height, margin, padding set karne deta hai */
+.inline-block {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    background-color: lightgreen;
+    margin: 5px;
+    text-align: center;
+    line-height: 50px; /* vertically text ko center mein lane ke liye */
+}
+    </style>
+</head>
+
+<body>
+    <!-- Display property: inline -->
+    <!-- p default block hota hai, yahan inline kar diya gaya -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    <p>Temporibus, repellat! libero illum vitae accusantium.</p>
+
+    <hr style="border: 2px solid blue;">
+
+    <!-- span ka default behaviour inline hota hai -->
+    <!-- yahan display:block diya gaya hai, isliye ye poori line le lega -->
+    <span class="aaru">Yeh span block ban gaya hai.</span>
+    <span class="aaru">Ab ye bhi next line mein aayega.</span>
+
+    <hr style="border: 2px solid blue;">
+
+    <!-- Ab dekhte hain display:inline-block -->
+    <!-- Ye same line mein dikhenge, lekin width aur height bhi set ho sakti hai -->
+    <span class="inline-block">Box 1</span>
+    <span class="inline-block">Box 2</span>
+    <span class="inline-block">Box 3</span>
+</body>
+</html>
