@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gradient Practical</title>
+
+  <style>
+    .box {
+      height: 200px;
+      width: 100%;
+      border: 3px solid black;
+      margin-bottom: 25px;
+    }
+
+    /* 1️⃣ Linear Gradient */
+    .linear {
+      /* Linear Gradient -> Color straight line me flow hota hai */
+      /* Syntax: linear-gradient(direction, color1, color2, ...) */
+      background-image: linear-gradient(to right, red, yellow);
+    }
+
+    /* 2️⃣ Radial Gradient */
+    .radial {
+      /* Radial Gradient -> Color center se bahar spread hota hai */
+      background-image: radial-gradient(circle, pink, blue);
+    }
+
+    /* 3️⃣ Repeating Linear Gradient */
+    .repeating-linear {
+      /* Repeating Linear -> Pattern straight line me repeat hota rehta hai */
+      background-image: repeating-linear-gradient(45deg, red 0%, red 10%, yellow 10%, yellow 20%);
+    }
+
+    /* 4️⃣ Repeating Radial Gradient */
+    .repeating-radial {
+      /* Repeating Radial -> Rings repeat hote hue dikhte hain */
+      background-image: repeating-radial-gradient(circle, yellow 5%, red 10%, blue 15%);
+    }
+
+    /* 5️⃣ Conic Gradient */
+    .conic {
+      /* Conic Gradient -> Rang center ke around rotate hote hain */
+      background-image: conic-gradient(red, yellow, green, blue, purple);
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1 style="text-align:center;">🎨 CSS GRADIENTS PRACTICAL</h1>
+
+  <h3>1️⃣ Linear Gradient</h3>
+  <div class="box linear"></div>
+
+  <h3>2️⃣ Radial Gradient</h3>
+  <div class="box radial"></div>
+
+  <h3>3️⃣ Repeating Linear Gradient</h3>
+  <div class="box repeating-linear"></div>
+
+  <h3>4️⃣ Repeating Radial Gradient</h3>
+  <div class="box repeating-radial"></div>
+
+  <h3>5️⃣ Conic Gradient</h3>
+  <div class="box conic"></div>
+
+</body>
+</html>
